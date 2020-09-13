@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+      <script>
+        var kk = prompt ('Hoeveel pizza\'s wil je? small');   // vraagt hoeveel je wilt
+        var ko = prompt ('Hoeveel pizza\'s wil je? medium'); // vraagt hoeveel je wilt
+        var kp = prompt ('Hoeveel pizza\'s wil je? large '); // vraagt hoeveel je wilt
+
+        var kk1 = (Number(kk));                             // het zet kk in een var
+        var kk2 = (Number(ko));                           // het zet ko in een var
+        var kk3 = (Number(kp));                             // het zet kp in een var
+
+        const small = 6;                                   // geeft de pizza een vaste prijs
+        const medium = 8;                                  // geeft de pizza een vaste prijs
+        const large = 10;                                  // geeft de pizza een vaste prijs
+
+        var totaal1 = (Number(Number(small * kk )));       // geeft totaal pizza's aan
+        var totaal2 = (Number(Number(medium * kk )));     // geeft totaal pizza's aan
+        var totaal3 = (Number(Number(large * kk )));      // geeft totaal pizza's aan
+
+        var ds = (kk + '+');                              // helpt de berekening weer te geven
+        var dm = (ko + '+');                              // helpt de berekening weer te geven
+        var dl = (kp);                                    // helpt de berekening weer te geven
+
+        var sk = (Number(kk));                            // geeft de nummer van de var aan
+        var mk = (Number(ko));                            // geeft de nummer van de var aan
+        var lk = (Number(kp));                            // geeft de nummer van de var aan
+
+        document.write ('small' + kk);                    // zet het aantal op het scherm
+        document.write('<h1>' + kk + " x 6 = " + '</h1>') ; // zet de berekening op het scherm
+        document.write ("<h1>" + (Number(Number(small * kk )))+ "</h1>"); // berekent de pizza
+
+        document.write ('medium' + ko);                   // zet het aantal op het scherm
+        document.write('<h1>' + ko + " x 8 = " + '</h1>') ; // zet de berekening op het scherm
+        document.write ("<h1>" + (Number(Number(medium * ko )))+ "</h1>"); // berekent de pizza
+
+        document.write ('large' + kp);                    // zet het aantal op het scherm
+        document.write ('<h1>' + kp + " x 10 = " + '</h1>') ; // zet de berekening op het scherm
+        document.write ("<h1>" + (Number(Number(large * kp )))+ "</h1>"); // berekent de pizza
+
+        document.write (Number(Number(Number(sk + mk + lk)))); // berekent totaal aantal pizza's
+        document.write ('euro\'s')                             // typed euros op het scherm
+        document.write ('<h1>' + (Number(Number(Number(totaal1 + totaal2 + totaal3))))+ '</h1>'); // berekent totale prijs
+
+        document.write (ds + dm + dl );                          // zet de berekening op het scherm
+        document.write ('<h1>' + (Number(Number(Number(kk1 + kk2 + kk3 ))))+ '</h1>');  //berekent het aantal
+        document.write ('pizza\'s')                              //zet pizza's op het scherm
+
+
+
+
+        </script>
+  </body>
+</html>
